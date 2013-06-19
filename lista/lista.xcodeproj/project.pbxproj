@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F99D0871771E0450086CB6A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F99D0861771E0450086CB6A /* CoreData.framework */; };
 		0FA78A1C17711CC0008426A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA78A1B17711CC0008426A4 /* UIKit.framework */; };
 		0FA78A1E17711CC0008426A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA78A1D17711CC0008426A4 /* Foundation.framework */; };
 		0FA78A2017711CC0008426A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA78A1F17711CC0008426A4 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F99D0861771E0450086CB6A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0FA78A1817711CC0008426A4 /* lista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA78A1B17711CC0008426A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FA78A1D17711CC0008426A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,12 +43,12 @@
 		0FA78A3117711CC1008426A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0FA78A3417711CC1008426A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0FA78A3F177132DE008426A4 /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
-		0FA78A4117713973008426A4 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		0FA78A4217713973008426A4 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		0FA78A4417713974008426A4 /* Lista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
-		0FA78A4517713974008426A4 /* Lista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lista.m; sourceTree = "<group>"; };
-		0FA78A4717713975008426A4 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
-		0FA78A4817713975008426A4 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		0FA78A4117713973008426A4 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = ../Item.h; sourceTree = "<group>"; };
+		0FA78A4217713973008426A4 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = ../Item.m; sourceTree = "<group>"; };
+		0FA78A4417713974008426A4 /* Lista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lista.h; path = ../Lista.h; sourceTree = "<group>"; };
+		0FA78A4517713974008426A4 /* Lista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lista.m; path = ../Lista.m; sourceTree = "<group>"; };
+		0FA78A4717713975008426A4 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Usuario.h; path = ../Usuario.h; sourceTree = "<group>"; };
+		0FA78A4817713975008426A4 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Usuario.m; path = ../Usuario.m; sourceTree = "<group>"; };
 		CD35FFF2177160B50062B05C /* VariasListasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariasListasViewController.h; sourceTree = "<group>"; };
 		CD35FFF3177160B50062B05C /* VariasListasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariasListasViewController.m; sourceTree = "<group>"; };
 		CD35FFF5177160D00062B05C /* listaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listaViewController.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F99D0871771E0450086CB6A /* CoreData.framework in Frameworks */,
 				0FA78A1C17711CC0008426A4 /* UIKit.framework in Frameworks */,
 				0FA78A1E17711CC0008426A4 /* Foundation.framework in Frameworks */,
 				0FA78A2017711CC0008426A4 /* CoreGraphics.framework in Frameworks */,
@@ -70,13 +73,7 @@
 		0FA78A0F17711CC0008426A4 = {
 			isa = PBXGroup;
 			children = (
-				0FA78A4717713975008426A4 /* Usuario.h */,
-				0FA78A4817713975008426A4 /* Usuario.m */,
-				0FA78A4417713974008426A4 /* Lista.h */,
-				0FA78A4517713974008426A4 /* Lista.m */,
-				0FA78A4117713973008426A4 /* Item.h */,
-				0FA78A4217713973008426A4 /* Item.m */,
-				0FA78A3E177132DD008426A4 /* Modelo.xcdatamodeld */,
+				0F99D0861771E0450086CB6A /* CoreData.framework */,
 				0FA78A2117711CC0008426A4 /* lista */,
 				0FA78A1A17711CC0008426A4 /* Frameworks */,
 				0FA78A1917711CC0008426A4 /* Products */,
@@ -104,6 +101,13 @@
 		0FA78A2117711CC0008426A4 /* lista */ = {
 			isa = PBXGroup;
 			children = (
+				0FA78A4717713975008426A4 /* Usuario.h */,
+				0FA78A4817713975008426A4 /* Usuario.m */,
+				0FA78A4417713974008426A4 /* Lista.h */,
+				0FA78A4517713974008426A4 /* Lista.m */,
+				0FA78A4117713973008426A4 /* Item.h */,
+				0FA78A4217713973008426A4 /* Item.m */,
+				0FA78A3E177132DD008426A4 /* Modelo.xcdatamodeld */,
 				0FA78A2A17711CC0008426A4 /* listaAppDelegate.h */,
 				0FA78A2B17711CC1008426A4 /* listaAppDelegate.m */,
 				0FA78A3317711CC1008426A4 /* MainStoryboard.storyboard */,
@@ -338,7 +342,8 @@
 				0FA78A3F177132DE008426A4 /* Modelo.xcdatamodel */,
 			);
 			currentVersion = 0FA78A3F177132DE008426A4 /* Modelo.xcdatamodel */;
-			path = Modelo.xcdatamodeld;
+			name = Modelo.xcdatamodeld;
+			path = ../Modelo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
