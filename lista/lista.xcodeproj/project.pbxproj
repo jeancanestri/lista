@@ -18,6 +18,10 @@
 		0FA78A3217711CC1008426A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA78A3117711CC1008426A4 /* Default-568h@2x.png */; };
 		0FA78A3517711CC1008426A4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA78A3317711CC1008426A4 /* MainStoryboard.storyboard */; };
 		0FA78A3817711CC1008426A4 /* listaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A3717711CC1008426A4 /* listaViewController.m */; };
+		0FA78A40177132DE008426A4 /* Modelo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A3E177132DD008426A4 /* Modelo.xcdatamodeld */; };
+		0FA78A4317713973008426A4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A4217713973008426A4 /* Item.m */; };
+		0FA78A4617713974008426A4 /* Lista.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A4517713974008426A4 /* Lista.m */; };
+		0FA78A4917713975008426A4 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A4817713975008426A4 /* Usuario.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,13 @@
 		0FA78A3417711CC1008426A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		0FA78A3617711CC1008426A4 /* listaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = listaViewController.h; sourceTree = "<group>"; };
 		0FA78A3717711CC1008426A4 /* listaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = listaViewController.m; sourceTree = "<group>"; };
+		0FA78A3F177132DE008426A4 /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
+		0FA78A4117713973008426A4 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		0FA78A4217713973008426A4 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		0FA78A4417713974008426A4 /* Lista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
+		0FA78A4517713974008426A4 /* Lista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lista.m; sourceTree = "<group>"; };
+		0FA78A4717713975008426A4 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
+		0FA78A4817713975008426A4 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,13 @@
 		0FA78A0F17711CC0008426A4 = {
 			isa = PBXGroup;
 			children = (
+				0FA78A4717713975008426A4 /* Usuario.h */,
+				0FA78A4817713975008426A4 /* Usuario.m */,
+				0FA78A4417713974008426A4 /* Lista.h */,
+				0FA78A4517713974008426A4 /* Lista.m */,
+				0FA78A4117713973008426A4 /* Item.h */,
+				0FA78A4217713973008426A4 /* Item.m */,
+				0FA78A3E177132DD008426A4 /* Modelo.xcdatamodeld */,
 				0FA78A2117711CC0008426A4 /* lista */,
 				0FA78A1A17711CC0008426A4 /* Frameworks */,
 				0FA78A1917711CC0008426A4 /* Products */,
@@ -177,6 +195,10 @@
 				0FA78A2817711CC0008426A4 /* main.m in Sources */,
 				0FA78A2C17711CC1008426A4 /* listaAppDelegate.m in Sources */,
 				0FA78A3817711CC1008426A4 /* listaViewController.m in Sources */,
+				0FA78A40177132DE008426A4 /* Modelo.xcdatamodeld in Sources */,
+				0FA78A4317713973008426A4 /* Item.m in Sources */,
+				0FA78A4617713974008426A4 /* Lista.m in Sources */,
+				0FA78A4917713975008426A4 /* Usuario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +323,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0FA78A3E177132DD008426A4 /* Modelo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0FA78A3F177132DE008426A4 /* Modelo.xcdatamodel */,
+			);
+			currentVersion = 0FA78A3F177132DE008426A4 /* Modelo.xcdatamodel */;
+			path = Modelo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0FA78A1017711CC0008426A4 /* Project object */;
 }
