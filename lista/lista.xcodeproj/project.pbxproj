@@ -17,11 +17,12 @@
 		0FA78A3017711CC1008426A4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA78A2F17711CC1008426A4 /* Default@2x.png */; };
 		0FA78A3217711CC1008426A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FA78A3117711CC1008426A4 /* Default-568h@2x.png */; };
 		0FA78A3517711CC1008426A4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA78A3317711CC1008426A4 /* MainStoryboard.storyboard */; };
-		0FA78A3817711CC1008426A4 /* listaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A3717711CC1008426A4 /* listaViewController.m */; };
 		0FA78A40177132DE008426A4 /* Modelo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A3E177132DD008426A4 /* Modelo.xcdatamodeld */; };
 		0FA78A4317713973008426A4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A4217713973008426A4 /* Item.m */; };
 		0FA78A4617713974008426A4 /* Lista.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A4517713974008426A4 /* Lista.m */; };
 		0FA78A4917713975008426A4 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA78A4817713975008426A4 /* Usuario.m */; };
+		CD35FFF4177160B50062B05C /* VariasListasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD35FFF3177160B50062B05C /* VariasListasViewController.m */; };
+		CD35FFF7177160D00062B05C /* listaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD35FFF6177160D00062B05C /* listaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +40,6 @@
 		0FA78A2F17711CC1008426A4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0FA78A3117711CC1008426A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0FA78A3417711CC1008426A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0FA78A3617711CC1008426A4 /* listaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = listaViewController.h; sourceTree = "<group>"; };
-		0FA78A3717711CC1008426A4 /* listaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = listaViewController.m; sourceTree = "<group>"; };
 		0FA78A3F177132DE008426A4 /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
 		0FA78A4117713973008426A4 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		0FA78A4217713973008426A4 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
@@ -48,6 +47,10 @@
 		0FA78A4517713974008426A4 /* Lista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lista.m; sourceTree = "<group>"; };
 		0FA78A4717713975008426A4 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
 		0FA78A4817713975008426A4 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		CD35FFF2177160B50062B05C /* VariasListasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariasListasViewController.h; sourceTree = "<group>"; };
+		CD35FFF3177160B50062B05C /* VariasListasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariasListasViewController.m; sourceTree = "<group>"; };
+		CD35FFF5177160D00062B05C /* listaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listaViewController.h; sourceTree = "<group>"; };
+		CD35FFF6177160D00062B05C /* listaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +107,10 @@
 				0FA78A2A17711CC0008426A4 /* listaAppDelegate.h */,
 				0FA78A2B17711CC1008426A4 /* listaAppDelegate.m */,
 				0FA78A3317711CC1008426A4 /* MainStoryboard.storyboard */,
-				0FA78A3617711CC1008426A4 /* listaViewController.h */,
-				0FA78A3717711CC1008426A4 /* listaViewController.m */,
+				CD35FFF2177160B50062B05C /* VariasListasViewController.h */,
+				CD35FFF3177160B50062B05C /* VariasListasViewController.m */,
+				CD35FFF5177160D00062B05C /* listaViewController.h */,
+				CD35FFF6177160D00062B05C /* listaViewController.m */,
 				0FA78A2217711CC0008426A4 /* Supporting Files */,
 			);
 			path = lista;
@@ -194,11 +199,12 @@
 			files = (
 				0FA78A2817711CC0008426A4 /* main.m in Sources */,
 				0FA78A2C17711CC1008426A4 /* listaAppDelegate.m in Sources */,
-				0FA78A3817711CC1008426A4 /* listaViewController.m in Sources */,
 				0FA78A40177132DE008426A4 /* Modelo.xcdatamodeld in Sources */,
 				0FA78A4317713973008426A4 /* Item.m in Sources */,
 				0FA78A4617713974008426A4 /* Lista.m in Sources */,
 				0FA78A4917713975008426A4 /* Usuario.m in Sources */,
+				CD35FFF4177160B50062B05C /* VariasListasViewController.m in Sources */,
+				CD35FFF7177160D00062B05C /* listaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +327,7 @@
 				0FA78A3D17711CC1008426A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

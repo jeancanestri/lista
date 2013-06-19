@@ -2,22 +2,30 @@
 //  listaViewController.m
 //  lista
 //
-//  Created by Jean Jean on 18/06/13.
+//  Created by Hugo on 19/06/13.
 //  Copyright (c) 2013 Jean. All rights reserved.
 //
 
 #import "listaViewController.h"
 
-@interface listaViewController ()
-
-@end
+//@interface listaViewController ()
+//@end
 
 @implementation listaViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

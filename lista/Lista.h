@@ -18,6 +18,7 @@
 @property (nonatomic, retain) NSManagedObject *criador;
 @property (nonatomic, retain) NSSet *compartilhadaCom;
 @property (nonatomic, retain) NSSet *items;
+
 @end
 
 @interface Lista (CoreDataGeneratedAccessors)
