@@ -7,6 +7,7 @@
 //
 
 #import "variasListasViewController.h"
+#import "listaViewController.h"
 
 //@interface variasListasViewController ()
 
@@ -36,7 +37,7 @@
     NSMutableArray *myArray = [[NSMutableArray alloc] init];
     
     // Populando com nomes fictícios o MutableArray
-    for(int i=0; i<20; i++)
+    for(int i=0; i<5; i++)
     {
         NSString *tempNome = [[NSString alloc] initWithFormat:@"Nome %d", i];
         NSString *tempSobreNome = [[NSString alloc] initWithFormat:@"Sobrenome %d", i];
@@ -85,10 +86,10 @@
     if (cell == nil)
     {
         // Exemplos de estilo para células de tabelas
-        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:myId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:myId];
         //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:myId];
         //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:myId];
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:myId];
+        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:myId];
     }
     
     
@@ -97,7 +98,7 @@
     
     // Define os textos primários e secundários da célula
     cell.textLabel.text = [myObject objectAtIndex:0];
-    cell.detailTextLabel.text = [myObject objectAtIndex:1];
+    //cell.detailTextLabel.text = [myObject objectAtIndex:1];
     
     // Adiciona um ícone para a célula
     //UIImage *myIcon = [UIImage imageNamed:@"iconeCubo.png"];
@@ -155,12 +156,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+     listaViewController *detailViewController = [[listaViewController alloc] init];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+     
 }
+
+
+
 
 @end

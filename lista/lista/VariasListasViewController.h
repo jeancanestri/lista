@@ -17,4 +17,5 @@
 //Vetor que vai ter as listas
 @property (nonatomic, strong) NSMutableArray *arrayVariasListas;
 
+
 @end

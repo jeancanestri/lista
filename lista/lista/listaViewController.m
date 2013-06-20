@@ -37,7 +37,7 @@
     NSMutableArray *myArray = [[NSMutableArray alloc] init];
     
     // Populando com nomes fictícios o MutableArray
-    for(int i=0; i<20; i++)
+    for(int i=5; i<10; i++)
     {
         NSString *tempNome = [[NSString alloc] initWithFormat:@"Nome %d", i];
         NSString *tempSobreNome = [[NSString alloc] initWithFormat:@"Sobrenome %d", i];
