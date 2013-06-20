@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface listaViewController : UIViewController
+@interface listaViewController : UITableViewController
+{
+    NSMutableArray *arrayLista;
+}
+
+
+//Vetor que vai ter uma lista em específico
+@property (nonatomic, strong) NSMutableArray *arrayLista;
 
 @end

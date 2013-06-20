@@ -1,5 +1,5 @@
 //
-//  VariasListasViewController.h
+//  variasListasViewController.h
 //  lista
 //
 //  Created by Hugo on 19/06/13.
@@ -8,13 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "Usuario.h"
-#import "Lista.h"
-#import "Item.h"
-
-
-
-@interface VariasListasViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface variasListasViewController : UITableViewController
 {
     NSMutableArray *arrayVariasListas;
 }
@@ -22,6 +16,5 @@
 
 //Vetor que vai ter as listas
 @property (nonatomic, strong) NSMutableArray *arrayVariasListas;
-
 
 @end
