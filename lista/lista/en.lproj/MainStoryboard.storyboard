@@ -27,7 +27,6 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="LISTAS" id="I6M-ga-vyr">
                         <barButtonItem key="leftBarButtonItem" title="+" id="9fF-5f-ptF"/>
-                        <barButtonItem key="rightBarButtonItem" title="Editar" id="wtY-kY-aT2"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -59,12 +58,16 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="LISTA" id="0jG-Yz-Vt6">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="kut-Qx-oGP"/>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="kut-Qx-oGP">
+                            <connections>
+                                <action selector="adicionaItem" destination="LAM-HU-jaQ" id="1D4-VY-OLd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97E-0y-W8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-914" y="-2819"/>
+            <point key="canvasLocation" x="-863" y="-2827"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zMo-Yl-TPA">
@@ -100,13 +103,30 @@
                                     <segue destination="aQX-U8-8U2" kind="push" id="cF4-fT-mjI"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQq-8f-XXb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="nLD-Rx-Bfi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LOC-Qf-YGj">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="XRg-ZD-pTR" secondAttribute="bottom" constant="148" id="1H6-Vc-Zso"/>
+                            <constraint firstItem="LOC-Qf-YGj" firstAttribute="top" secondItem="mN4-s9-MvQ" secondAttribute="top" constant="118" id="1Ka-mp-WXj"/>
                             <constraint firstItem="XRg-ZD-pTR" firstAttribute="centerX" secondItem="mN4-s9-MvQ" secondAttribute="centerX" type="default" id="69o-Jk-Tqx"/>
                             <constraint firstItem="Jw0-8P-nIW" firstAttribute="top" secondItem="mN4-s9-MvQ" secondAttribute="top" constant="162" id="CvT-Ny-d0m"/>
-                            <constraint firstItem="Jw0-8P-nIW" firstAttribute="centerX" secondItem="XRg-ZD-pTR" secondAttribute="centerX" type="default" id="cfr-ao-ilJ"/>
+                            <constraint firstItem="XRg-ZD-pTR" firstAttribute="trailing" secondItem="Jw0-8P-nIW" secondAttribute="trailing" type="default" id="SDl-CI-fQl"/>
+                            <constraint firstItem="LOC-Qf-YGj" firstAttribute="leading" secondItem="uQq-8f-XXb" secondAttribute="leading" type="default" id="hhu-uY-kwQ"/>
+                            <constraint firstItem="LOC-Qf-YGj" firstAttribute="centerX" secondItem="Jw0-8P-nIW" secondAttribute="centerX" type="default" id="i7N-6W-2kJ"/>
+                            <constraint firstItem="uQq-8f-XXb" firstAttribute="top" secondItem="mN4-s9-MvQ" secondAttribute="top" constant="75" id="vNL-W8-xmZ"/>
+                            <constraint firstItem="Jw0-8P-nIW" firstAttribute="leading" secondItem="XRg-ZD-pTR" secondAttribute="leading" type="default" id="wBU-CQ-gYd"/>
+                            <constraint firstItem="LOC-Qf-YGj" firstAttribute="trailing" secondItem="uQq-8f-XXb" secondAttribute="trailing" type="default" id="yrS-Kp-tSl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yKj-Aw-A30"/>
@@ -122,9 +142,31 @@
                     <view key="view" contentMode="scaleToFill" id="s8v-I8-ARM">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feU-Lv-aeo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="6IE-ag-hVW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oO2-yX-Avu">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="feU-Lv-aeo" firstAttribute="centerX" secondItem="s8v-I8-ARM" secondAttribute="centerX" type="default" id="45e-Y8-giP"/>
+                            <constraint firstItem="oO2-yX-Avu" firstAttribute="leading" secondItem="feU-Lv-aeo" secondAttribute="leading" type="default" id="DHj-27-lqg"/>
+                            <constraint firstAttribute="bottom" secondItem="oO2-yX-Avu" secondAttribute="bottom" constant="147" id="HxM-Ay-knF"/>
+                            <constraint firstItem="oO2-yX-Avu" firstAttribute="trailing" secondItem="feU-Lv-aeo" secondAttribute="trailing" type="default" id="R97-KH-VCa"/>
+                            <constraint firstItem="feU-Lv-aeo" firstAttribute="top" secondItem="s8v-I8-ARM" secondAttribute="top" constant="153" id="rYx-yd-a3D"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2nE-H4-qUL"/>
+                    <navigationItem key="navigationItem" id="2nE-H4-qUL">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="3qw-55-eOk"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZW-57-rH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,6 +188,21 @@
             <point key="canvasLocation" x="-2541" y="-2827"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="listaViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/listaViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="adicionaItem"/>
+                <relationship kind="action" name="removeItem"/>
+            </relationships>
+        </class>
+        <class className="variasListasViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/variasListasViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

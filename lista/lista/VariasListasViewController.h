@@ -21,7 +21,7 @@
 
 ///////////////////// BOTOES INTERFACE////////////////////////
 //Botão que cria uma Lista
-- (IBAction) adicionaLista;
-- (IBAction) editaLista;
+//- (IBAction) adicionaLista;
+//- (IBAction) editaLista;
 
 @end
