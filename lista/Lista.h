@@ -12,12 +12,15 @@
 @class Item;
 
 @interface Lista : NSManagedObject
+{
+    NSString * nome;
+}
 
-@property (nonatomic, retain) NSString * nome;
-@property (nonatomic, retain) NSString * tipo;
-@property (nonatomic, retain) NSManagedObject *criador;
-@property (nonatomic, retain) NSSet *compartilhadaCom;
-@property (nonatomic, retain) NSSet *items;
+@property (nonatomic, strong) NSString * nome;
+//@property (nonatomic, retain) NSString * tipo;
+//@property (nonatomic, retain) NSManagedObject *criador;
+//@property (nonatomic, retain) NSSet *compartilhadaCom;
+//@property (nonatomic, retain) NSSet *items;
 
 @end
 

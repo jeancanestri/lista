@@ -10,10 +10,15 @@
 #import <CoreData/CoreData.h>
 
 
-@interface Item : NSManagedObject
+//@interface Item : NSManagedObject
+@interface Item : NSObject
+{
+    NSString * nome;
+    NSNumber * estado;
+}
 
-@property (nonatomic, retain) NSString * nome;
-@property (nonatomic, retain) NSNumber * estado;
-@property (nonatomic, retain) NSManagedObject *lista;
+@property (nonatomic, strong) NSString * nome;
+@property (nonatomic, strong) NSNumber * estado;
+//@property (nonatomic, retain) NSManagedObject *lista;
 
 @end

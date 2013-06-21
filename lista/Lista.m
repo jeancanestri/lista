@@ -12,10 +12,10 @@
 
 @implementation Lista
 
-@dynamic nome;
-@dynamic tipo;
-@dynamic criador;
-@dynamic compartilhadaCom;
-@dynamic items;
+@synthesize  nome;
+//@dynamic tipo;
+//@dynamic criador;
+//@dynamic compartilhadaCom;
+//@dynamic items;
 
 @end

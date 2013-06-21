@@ -7,7 +7,7 @@
 //
 
 #import "variasListasViewController.h"
-#import "listaViewController.h"
+
 
 //@interface variasListasViewController ()
 
@@ -35,19 +35,19 @@
     
     // Criando um NSMutableArray
     NSMutableArray *myArray = [[NSMutableArray alloc] init];
-    
-    // Populando com nomes fictícios o MutableArray
-    for(int i=0; i<5; i++)
-    {
-        NSString *tempNome = [[NSString alloc] initWithFormat:@"Nome %d", i];
-        NSString *tempSobreNome = [[NSString alloc] initWithFormat:@"Sobrenome %d", i];
-        NSArray *tempArray = [[NSArray alloc] initWithObjects:tempNome, tempSobreNome, nil];
-        
-        [myArray addObject:tempArray];
-    }
+    // Criando as listas de varias listas
+    Lista *myList = [[Lista alloc] init];
+        myList.nome = [NSString stringWithFormat:@"Lista 1"];
+        [myArray addObject:myList];
+    Lista *myList1 = [[Lista alloc] init];
+        myList1.nome = [NSString stringWithFormat:@"Lista 2"];
+        [myArray addObject:myList1];
+    Lista *myList2 = [[Lista alloc] init];
+        myList2.nome = [NSString stringWithFormat:@"Lista 3"];
+        [myArray addObject:myList2];
     
     self.arrayVariasListas = myArray;
-    
+ 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -94,10 +94,10 @@
     
     
     // Configure the cell...
-    NSArray *myObject = [arrayVariasListas objectAtIndex:[indexPath row]];
+    Lista *myObject = [arrayVariasListas objectAtIndex:[indexPath row]];
     
     // Define os textos primários e secundários da célula
-    cell.textLabel.text = [myObject objectAtIndex:0];
+    cell.textLabel.text = myObject.nome;
     //cell.detailTextLabel.text = [myObject objectAtIndex:1];
     
     // Adiciona um ícone para a célula
@@ -161,6 +161,7 @@
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
+    
      
 }
 

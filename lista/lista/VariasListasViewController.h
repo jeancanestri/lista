@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "listaViewController.h"
 
 @interface variasListasViewController : UITableViewController
 {
@@ -17,5 +18,10 @@
 //Vetor que vai ter as listas
 @property (nonatomic, strong) NSMutableArray *arrayVariasListas;
 
+
+///////////////////// BOTOES INTERFACE////////////////////////
+//Botão que cria uma Lista
+- (IBAction) adicionaLista;
+- (IBAction) editaLista;
 
 @end

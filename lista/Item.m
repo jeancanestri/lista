@@ -11,8 +11,9 @@
 
 @implementation Item
 
-@dynamic nome;
-@dynamic estado;
-@dynamic lista;
+@synthesize  nome;
+@synthesize estado;
+//@synthesize lista;
+//@dynamic lista;
 
 @end

@@ -9,6 +9,7 @@
 
 #import "listaViewController.h"
 
+
 //@interface variasListasViewController ()
 
 //@end
@@ -16,7 +17,6 @@
 @implementation listaViewController
 
 @synthesize arrayLista;
-@synthesize lastIndexPath;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -32,20 +32,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+  
     // Criando um NSMutableArray
     NSMutableArray *myArray = [[NSMutableArray alloc] init];
-    
-    // Populando com nomes fictícios o MutableArray
-    for(int i=5; i<10; i++)
-    {
-        NSString *tempNome = [[NSString alloc] initWithFormat:@"Nome %d", i];
-        NSArray *tempArray = [[NSArray alloc] initWithObjects:tempNome, nil];
-        
-        [myArray addObject:tempArray];
-    }
+    // Criando os itens da lista
+    Item *myItem = [[Item alloc] init];
+        myItem.nome = [NSString stringWithFormat:@"Item 1"];
+        myItem.estado = 0;
+        [myArray addObject:myItem];
+    Item *myItem1 = [[Item alloc] init];
+        myItem1.nome = [NSString stringWithFormat:@"Item 2"];
+        myItem1.estado = 0;
+        [myArray addObject:myItem1];
+    Item *myItem2 = [[Item alloc] init];
+        myItem2.nome = [NSString stringWithFormat:@"Item 3"];
+        myItem2.estado = 0;
+        [myArray addObject:myItem2];
     
     self.arrayLista = myArray;
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -105,10 +110,10 @@
     */
     
     // Configure the cell...
-    NSArray *myObject = [arrayLista objectAtIndex:[indexPath row]];
+    Item *myObject = [arrayLista objectAtIndex:[indexPath row]];
     
     // Define os textos primários e secundários da célula
-    cell.textLabel.text = [myObject objectAtIndex:0];
+    cell.textLabel.text = myObject.nome;
     //cell.detailTextLabel.text = [myObject objectAtIndex:1];
     
     // Adiciona um ícone para a célula
@@ -167,10 +172,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    //self.lastIndexPath = indexPath;
+    ////////////////////// INTERFACE /////////////////////////////
+    // Parte do codigo que marca na celula como checked ou nao na interface.
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    if (cell.accessoryType == UITableViewCellAccessoryCheckmark)
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    [cell setSelected:TRUE animated:TRUE];
     
-    //[tableView reloadData];
     
+    ///////////////// LOGICA DE DADOS /////////////////////////////
+    //Inserir aqui parte do codigo
 }
 
 @end
