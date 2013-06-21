@@ -11,10 +11,12 @@
 @interface listaViewController : UITableViewController
 {
     NSMutableArray *arrayLista;
+    NSIndexPath *lastIndexPath;
 }
 
 
 //Vetor que vai ter uma lista em específico
 @property (nonatomic, strong) NSMutableArray *arrayLista;
+@property (nonatomic, strong) NSIndexPath *lastIndexPath;
 
 @end

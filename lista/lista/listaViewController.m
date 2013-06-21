@@ -16,7 +16,7 @@
 @implementation listaViewController
 
 @synthesize arrayLista;
-
+@synthesize lastIndexPath;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -40,8 +40,7 @@
     for(int i=5; i<10; i++)
     {
         NSString *tempNome = [[NSString alloc] initWithFormat:@"Nome %d", i];
-        NSString *tempSobreNome = [[NSString alloc] initWithFormat:@"Sobrenome %d", i];
-        NSArray *tempArray = [[NSArray alloc] initWithObjects:tempNome, tempSobreNome, nil];
+        NSArray *tempArray = [[NSArray alloc] initWithObjects:tempNome, nil];
         
         [myArray addObject:tempArray];
     }
@@ -82,23 +81,35 @@
     
     static NSString *myId = @"Exemplo";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:myId];
+
     
     if (cell == nil)
     {
         // Exemplos de estilo para células de tabelas
-        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:myId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:myId];
         //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:myId];
         //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:myId];
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:myId];
+        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:myId];
     }
     
+    /*
+    //Insere o checkmark na lista
+    if ([indexPath compare:self.lastIndexPath] == NSOrderedSame)
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    */
     
     // Configure the cell...
     NSArray *myObject = [arrayLista objectAtIndex:[indexPath row]];
     
     // Define os textos primários e secundários da célula
     cell.textLabel.text = [myObject objectAtIndex:0];
-    cell.detailTextLabel.text = [myObject objectAtIndex:1];
+    //cell.detailTextLabel.text = [myObject objectAtIndex:1];
     
     // Adiciona um ícone para a célula
     //UIImage *myIcon = [UIImage imageNamed:@"iconeCubo.png"];
@@ -155,13 +166,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    
+    //self.lastIndexPath = indexPath;
+    
+    //[tableView reloadData];
+    
 }
 
 @end
